@@ -22,7 +22,7 @@ console.log('Salveeee Baker')
 //arrayExplicacao.pop()
 //console.log(arraybacker)
 
-// SPLICE (i,n)=>  Remove ou substitui elementos em um array  - array.splice(ind, qtd, 'elemento')
+// SPLICE (i,n)=>  Remove ou substitui elementos em um array  - array.splice({índice onde iniciar},{quantos itens remover},{itens a serem adicionados} )
 
 //arrayExplicacao.splice(1,2,'Helooo') // a partir do elemento de indice 1, tire 2 itens e troque por Helooo
 //console.log(arraybacker)
@@ -67,10 +67,35 @@ console.log(pessoaEstudanteCopia.modulo)
 const listaDeEstudantesLabenu = [
     pessoaEstudante,
     pessoaEstudanteCopia,
-    pessoaEstudante2 ={
-
+    {
+        nome:'Deah',
+        cpf:523434567, 
+        modulo:modulos_labenu[3]
+    },
+    {
+        nome:'Isra',
+        cpf:673834567, 
+        modulo:modulos_labenu[2]
     }
 ]
+
+console.log(listaDeEstudantesLabenu)
+
+// Inserindo um novo elemento no array de objetos 
+
+let novaPessoaEstudante = {
+    ...pessoaEstudante,
+    nome:'Clara',
+    cpf:987434567,
+    modulo:modulos_labenu[0] 
+}
+
+listaDeEstudantesLabenu.push(novaPessoaEstudante)
+console.log(listaDeEstudantesLabenu)
+
+// Acessando um propriedade em um array de objeto
+
+
 
 
 //-------------- EXERCICIO 1 ---------
