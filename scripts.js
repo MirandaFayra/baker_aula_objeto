@@ -14,17 +14,17 @@ console.log('Salveeee Baker')
 
 // PUSH => Insere o elemento no final do array 
 
-//arrayExplicacao.push("bananinha")
+//arraybacker.push("bananinha")
 //console.log(arraybacker)
 
 // POP => Retira o elemento no final do array
 
-//arrayExplicacao.pop()
+//arraybacker.pop()
 //console.log(arraybacker)
 
 // SPLICE (i,n)=>  Remove ou substitui elementos em um array  - array.splice({índice onde iniciar},{quantos itens remover},{itens a serem adicionados} )
 
-//arrayExplicacao.splice(1,2,'Helooo') // a partir do elemento de indice 1, tire 2 itens e troque por Helooo
+//arraybacker.splice(1,2,'Helooo','Salve') // a partir do elemento de indice 1, tire 2 itens e troque por Helooo
 //console.log(arraybacker)
 
 //-------------- CONCEITOS. OBJETOS ---------
