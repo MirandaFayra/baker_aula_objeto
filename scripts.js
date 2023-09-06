@@ -29,11 +29,12 @@ console.log('Salveeee Baker')
 
 //-------------- CONCEITOS. OBJETOS ---------
 
-const modulos_labenu = ['fundamentos','frontend', 'backend', 'full-stack']
+//const modulos_labenu = ['fundamentos','frontend', 'backend', 'full-stack']
 
 
 // Como Declar um objeto => propriedade : valor
 
+/*
 const pessoaEstudante ={
     nome:'Júnior',
     cpf:123434567, 
@@ -41,9 +42,11 @@ const pessoaEstudante ={
 } 
 
 console.log(pessoaEstudante)
+*/
 
 // Copiando um Array e mudando as propriedades
 
+/*
 const pessoaEstudanteCopia ={
     ...pessoaEstudante, 
     nome:'Fayra',
@@ -53,17 +56,18 @@ const pessoaEstudanteCopia ={
 
 console.log(pessoaEstudante)
 console.log(pessoaEstudanteCopia)
-
+*/
 
 // Mudar a propriedade do elemento 
+/*
 pessoaEstudanteCopia.modulo = modulos_labenu[2]
-
+*/
 
 // Acessando uma propriedade do objeto
-console.log(pessoaEstudanteCopia.modulo)
+//console.log(pessoaEstudanteCopia.modulo)
 
 // Criar um array (uma lista) de Objetos
-
+/*
 const listaDeEstudantesLabenu = [
     pessoaEstudante,
     pessoaEstudanteCopia,
@@ -80,9 +84,11 @@ const listaDeEstudantesLabenu = [
 ]
 
 console.log(listaDeEstudantesLabenu)
+*/
 
 // Inserindo um novo elemento no array de objetos 
 
+/*
 let novaPessoaEstudante = {
     ...pessoaEstudante,
     nome:'Clara',
@@ -92,12 +98,11 @@ let novaPessoaEstudante = {
 
 listaDeEstudantesLabenu.push(novaPessoaEstudante)
 console.log(listaDeEstudantesLabenu)
+*/ 
 
 // Acessando um propriedade em um array de objeto
 
-console.log(listaDeEstudantesLabenu[3].nome)
-
-
+//console.log(listaDeEstudantesLabenu[3].nome)
 
 
 //-------------- EXERCICIO 1 ---------
