@@ -95,6 +95,8 @@ console.log(listaDeEstudantesLabenu)
 
 // Acessando um propriedade em um array de objeto
 
+console.log(listaDeEstudantesLabenu[3].nome)
+
 
 
 
