@@ -184,15 +184,17 @@ function imprimirObjeto (){
         modulo :modulos_labenu[0] 
     }
 
+    let  copiaDeNotas = estudante.notasDoBimestre
+
     const copiaEstudante ={
         ...estudante, 
         nome: 'Caio',
         sobrenome: 'Santos',
         numeroDeMatricula :'223456',
-        notasDoBimestre:[10,10,9],
+        notasDoBimestre:[...copiaDeNotas,9],
         modulo :modulos_labenu[1]
     }
-    console.log(copiaEstudante);
+    console.log(copiaEstudante)
 
     let estudantesLabenu = [
         {
@@ -200,7 +202,7 @@ function imprimirObjeto (){
             nome: 'Gustavo',
             sobrenome: 'Soares',
             numeroDeMatricula :'323456',
-            notasDoBimestre:[8,10,9],
+            notasDoBimestre:[...copiaDeNotas,7],
             modulo :modulos_labenu[2]
         },
         {
@@ -208,7 +210,7 @@ function imprimirObjeto (){
             nome: 'Hugo',
             sobrenome: 'Luiz',
             numeroDeMatricula :'423456',
-            notasDoBimestre:[8,7,10],
+            notasDoBimestre:[...copiaDeNotas,6],
             modulo :modulos_labenu[1]
         },
         {
@@ -216,7 +218,7 @@ function imprimirObjeto (){
             nome: 'Leila',
             sobrenome: 'Daine',
             numeroDeMatricula :'523456',
-            notasDoBimestre:[8,10,10],
+            notasDoBimestre:[...copiaDeNotas,9],
             modulo :modulos_labenu[3]
         },
         {
@@ -224,7 +226,7 @@ function imprimirObjeto (){
             nome: 'Leonardo',
             sobrenome: 'Soares',
             numeroDeMatricula :'623456',
-            notasDoBimestre:[7,10,9],
+            notasDoBimestre:[...copiaDeNotas,10],
             modulo :modulos_labenu[2]
         }
      ]
