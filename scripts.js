@@ -33,8 +33,18 @@ console.log('Salveeee Baker')
 
 
 // Como Declar um objeto => propriedade : valor
-
 /*
+const caixaDeOculos ={
+    cor : 'vermelho',
+    formato : 'oval',
+    largura : 0.05,
+    comprimento: 0.18,
+    altura: 0.03,
+    material: 'plastico',
+    donaFayra:true
+}
+
+
 const pessoaEstudante ={
     nome:'Júnior',
     cpf:123434567, 
@@ -42,13 +52,13 @@ const pessoaEstudante ={
 } 
 
 console.log(pessoaEstudante)
-*/
 
+*/
 // Copiando um Array e mudando as propriedades
 
 /*
 const pessoaEstudanteCopia ={
-    ...pessoaEstudante, 
+    ...pessoaEstudante,  //onde copiamos pessoaEstudante
     nome:'Fayra',
     cpf:233434567,
     modulo:modulos_labenu[1] 
@@ -59,9 +69,9 @@ console.log(pessoaEstudanteCopia)
 */
 
 // Mudar a propriedade do elemento 
-/*
-pessoaEstudanteCopia.modulo = modulos_labenu[2]
-*/
+
+//pessoaEstudanteCopia.modulo = modulos_labenu[2]
+
 
 // Acessando uma propriedade do objeto
 //console.log(pessoaEstudanteCopia.modulo)
@@ -84,11 +94,11 @@ const listaDeEstudantesLabenu = [
 ]
 
 console.log(listaDeEstudantesLabenu)
-*/
+
 
 // Inserindo um novo elemento no array de objetos 
 
-/*
+
 let novaPessoaEstudante = {
     ...pessoaEstudante,
     nome:'Clara',
@@ -98,11 +108,11 @@ let novaPessoaEstudante = {
 
 listaDeEstudantesLabenu.push(novaPessoaEstudante)
 console.log(listaDeEstudantesLabenu)
-*/ 
+*/
 
 // Acessando um propriedade em um array de objeto
 
-//console.log(listaDeEstudantesLabenu[3].nome)
+//console.log(listaDeEstudantesLabenu[1].nome)
 
 
 //-------------- EXERCICIO 1 ---------
