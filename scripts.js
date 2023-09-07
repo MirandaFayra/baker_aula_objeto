@@ -237,3 +237,66 @@ function imprimirObjeto (){
 imprimirObjeto ()
 
 //-------------- EXERCICIO EXTRA ---------
+// 1. Criar uma funcao chamada imprimir compra
+// 2. Criar um objeto chamado compra
+// 3. Passar a propriedade nome, e valor 
+// 4. Passar a propriedade forma, e valor 
+// 5. Passar a propriedade endereco, e valor 
+// 6. Dentro obj compra , adiciona a propriedade produtos (lista de produtos comprados) 
+// 7. Cada produto deverá ser um objeto ===  conjunto de caractriaticas
+// 8. Passar a propriedade nome, e valor 
+// 9. Passar a propriedade preco, e valor 
+// 10. Passar a propriedade quantidade, e valor 
+// 11. Imprimir a compra 
+// 12. Acessar a lista de produtos e imprimir a quantidade 
+// 13. Criar um novo item a ser presentiado
+// 14. Copiar  a compra 
+// 15. Passar a propriedade nome, e valor 
+// 16. Passar a propriedade forma, e valor 
+// 17. Passar a propriedade endereco, e valor
+// 18. Imprimir os dois 
+
+const imprimirCompra =()=>{
+    let compra ={
+        nome : 'Fayra',
+        forma : 'Credito',
+        endereco: 'Rua : Bananinha city - Flórida',
+        produtos :[
+            {
+                nome:'Abacaxi',
+                preco:10,
+                quantidade:1
+            },
+            {
+                nome:'Abacate',
+                preco:5,
+                quantidade:3
+            }
+            ,
+            {
+                nome:'Tomate',
+                preco:16,
+                quantidade:8
+            },
+            {
+                nome:'Cebola',
+                preco:10,
+                quantidade:3
+            }
+        ]
+    }
+    console.log(compra.produtos.length) // Verificando a qtn - pass12
+    
+    let compraPresente ={  
+        ...compra,
+        nome : 'Jr',
+        forma : 'Cartao Presente',
+        endereco: 'Rua : Belchior - Sobral',
+    }
+
+    console.log(compra)
+    console.log(compraPresente)
+
+}
+
+imprimirCompra()
