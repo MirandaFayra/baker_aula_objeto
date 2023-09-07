@@ -136,6 +136,7 @@ imprimirObjeto()
 
 //-------------- EXERCICIO 2 -------------
 
+/*
 const modulos_labenu = ['fundamentos','frontend', 'backend', 'full-stack']
 
 function imprimirObjeto (){
@@ -156,5 +157,83 @@ function imprimirObjeto (){
 }
 
 imprimirObjeto()
+*/
 //-------------- EXERCICIO 3 -------------
+
+// Algoritimo do ex : 
+// 1. Criar um novo objeto 
+// 3. Utilizando o spreed operator/ espalhamento vou fazer a cópia
+// 4. Depois de feita a cópia, alterar o nome
+// 5. Vou ter que copiar o array de notas
+// 6. Na cópia desse array de notas, vou adicionar a nota 9 
+// 7. Verificar qual é o módulo atual da pessoa estudante , e ir para o próximo 
+// 8. Imprimir o objeto copiado com as atualizacoes 
+// 9. Criar um array de estudantesLabenu
+// 10. Nesse novo array inserir essa nova pessoa estudante 
+
+
+const modulos_labenu = ['fundamentos','frontend', 'backend', 'full-stack']
+
+
+function imprimirObjeto (){
+    const estudante ={
+        nome:'Amanda',
+        sobrenome: 'Garcia',
+        numeroDeMatricula :'123456',
+        notasDoBimestre: [10,5,9],
+        modulo :modulos_labenu[0] 
+    }
+
+    const copiaEstudante ={
+        ...estudante, 
+        nome: 'Caio',
+        sobrenome: 'Santos',
+        numeroDeMatricula :'223456',
+        notasDoBimestre:[10,10,9],
+        modulo :modulos_labenu[1]
+    }
+    console.log(copiaEstudante);
+
+    let estudantesLabenu = [
+        {
+            ...estudante, 
+            nome: 'Gustavo',
+            sobrenome: 'Soares',
+            numeroDeMatricula :'323456',
+            notasDoBimestre:[8,10,9],
+            modulo :modulos_labenu[2]
+        },
+        {
+            ...estudante, 
+            nome: 'Hugo',
+            sobrenome: 'Luiz',
+            numeroDeMatricula :'423456',
+            notasDoBimestre:[8,7,10],
+            modulo :modulos_labenu[1]
+        },
+        {
+            ...estudante, 
+            nome: 'Leila',
+            sobrenome: 'Daine',
+            numeroDeMatricula :'523456',
+            notasDoBimestre:[8,10,10],
+            modulo :modulos_labenu[3]
+        },
+        {
+            ...estudante, 
+            nome: 'Leonardo',
+            sobrenome: 'Soares',
+            numeroDeMatricula :'623456',
+            notasDoBimestre:[7,10,9],
+            modulo :modulos_labenu[2]
+        }
+     ]
+    
+    //estudantesLabenu.push(estudante, copiaEstudante) 
+    estudantesLabenu.unshift(estudante, copiaEstudante)
+    console.log(estudantesLabenu)
+}
+
+imprimirObjeto ()
+
 //-------------- EXERCICIO EXTRA ---------
