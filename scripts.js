@@ -5,6 +5,7 @@ console.log('Salveeee Baker')
 // Variável espaço na memória em que guardamos os dados
 
 // Funções, trechos de código reutilizável 
+// function imprimirObjeto (){} || const imprimirObjeto = ()=>{}
 
 // ARRAY = LISTA de variáveis
 
@@ -114,8 +115,46 @@ console.log(listaDeEstudantesLabenu)
 
 //console.log(listaDeEstudantesLabenu[1].nome)
 
+//-------------- EXERCICIO 1 -------------
 
-//-------------- EXERCICIO 1 ---------
-//-------------- EXERCICIO 2 ---------
-//-------------- EXERCICIO 3 ---------
+/*
+function imprimirObjeto (){
+    const estudante ={
+        nome:'Amanda',
+        sobrenome: 'Garcia',
+        numeroDeMatricula :'123456',
+        notasDoBimestre: [10,5,9]
+    }
+
+    console.log(estudante)
+
+}
+
+imprimirObjeto()
+*/ 
+
+
+//-------------- EXERCICIO 2 -------------
+
+const modulos_labenu = ['fundamentos','frontend', 'backend', 'full-stack']
+
+function imprimirObjeto (){
+    const estudante ={
+        nome:'Amanda',
+        sobrenome: 'Garcia',
+        numeroDeMatricula :'123456',
+        notasDoBimestre: [10,5,9],
+        modulo :modulos_labenu[0] 
+    }
+
+    //estudante.modulo = modulos_labenu[0] 
+
+    console.log(estudante)
+
+    console.log(`O nome da pessoa estudante é : ${estudante.nome}. No segundo bimestre, essa pessoa estudante teve como nota : ${estudante.notasDoBimestre[1]}. Essa pessoa está no módulo : ${estudante.modulo} `)
+
+}
+
+imprimirObjeto()
+//-------------- EXERCICIO 3 -------------
 //-------------- EXERCICIO EXTRA ---------
